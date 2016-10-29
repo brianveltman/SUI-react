@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-import { Container } from 'semantic-ui-react';
-import Header from './Components/Common/Header';
+import { Container, Grid } from 'semantic-ui-react';
 import Wrapper from './Components/Common/Wrapper';
 
 
 class App extends Component {
   render() {
     return (
+    <Grid>
+    <Grid.Row>
       <Container>
-      <Header />
       <Wrapper />
       </Container>
+      </Grid.Row>
+      </Grid>
     );
   }
 }
