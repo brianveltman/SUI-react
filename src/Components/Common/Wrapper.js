@@ -5,20 +5,12 @@ import Header from './Header';
 class Wrapper extends Component {
   render() {
     return (
-      <Grid>
-       <Grid.Row>
-       <Grid.Column>
+      <div>
        <Header />
-       </Grid.Column>
-       </Grid.Row>
-        <Grid.Row>
-          <Grid.Column>
             <Segment attached='bottom'>
               <p>Hello</p>
             </Segment>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>      
+            </div>
     );
   }
 }

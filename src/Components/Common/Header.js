@@ -10,11 +10,13 @@ class Header extends Component {
 
   render() {
     const { activeItem } = this.state
+    const src = 'http://semantic-ui.com/images/wireframe/square-image.png'
+    const dropicon = 'dropdown'
     const trigger = (
-  <span>
-    <Image avatar />
-    Hello Bob
-  </span>
+  <div>
+    <Image src={src} avatar />
+    <span>Username</span>
+  </div>
 )
     return (
       <Menu icon='labeled' attached='top'>
@@ -33,7 +35,7 @@ class Header extends Component {
         </Menu.Item>
 
         <Menu.Menu position='right'>
-        <Dropdown as={Menu.Item} trigger={trigger}>
+        <Dropdown as={Menu.Item} trigger={trigger} icon={dropicon}>
     <Dropdown.Menu>
       <Dropdown.Item disabled>
         Signed in as <strong>Bob Smith</strong>
