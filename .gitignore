@@ -8,10 +8,11 @@ coverage
 
 # production
 build
+!src\semantic\tasks\build
 
 # misc
 .DS_Store
 .env
 npm-debug.log
-yarn.lock
 public/semantic
+yarn-error.log
