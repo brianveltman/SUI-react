@@ -8,7 +8,6 @@ coverage
 
 # production
 build
-!src\semantic\tasks\build
 
 # misc
 .DS_Store
